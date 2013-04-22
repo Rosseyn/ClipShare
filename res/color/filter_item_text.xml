@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:state_activated="true"
+        android:color="#ACACAC"
+        android:drawable="@color/light_grey"
+      />
+  <item android:color="#FFFFFF"
+        android:drawable="@color/white"
+        />
+</selector>

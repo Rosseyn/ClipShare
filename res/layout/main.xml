@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+      <LinearLayout android:id="@+id/launch_buttons"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_above="@+id/alter_buttons"
+                    android:visibility="gone">
+      </LinearLayout>
+      <LinearLayout android:id="@+id/alter_buttons"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_above="@+id/button_copy"
+                    android:layout_alignParentBottom="true"
+                    >
+        <Button android:id="@+id/button_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="@string/button_filter"
+                android:onClick="filter"
+                />
+        <Button android:id="@+id/button_shorten"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:text="@string/button_shorten"
+                android:onClick="shortenLink"
+                android:tag="1"
+                />
+        <Button android:id="@+id/button_copy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="@string/button_copy"
+                android:onClick="copyToClipboard"
+                />
+      </LinearLayout>
+    <EditText android:id="@+id/edit_data"
+              android:layout_width="match_parent"
+              android:layout_height="96dp"
+              android:layout_above="@+id/launch_buttons"
+              android:layout_alignParentTop="true"
+              android:gravity="top"
+              android:hint="@string/edit_message"
+              />
+              <!--android:text="Hello World, MyActivity"-->
+</RelativeLayout>
